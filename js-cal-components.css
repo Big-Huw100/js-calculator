@@ -1,0 +1,22 @@
+#screen {
+  background-color: aqua;
+  border-style: none;
+  width: 100%;
+  height: 70.13px;
+  margin-top: 5px;
+}
+
+button {
+  background-color: aqua;
+  border: none;
+  color: #171717;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  height: 70.13px;
+}
+
+.blank {
+  width: 70.13px;
+  height: 70.13px;
+}

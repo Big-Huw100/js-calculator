@@ -37,7 +37,7 @@ body {
   width: 100%;
 }
 
-.screen {
+#screen {
   background-color: aqua;
   border-style: none;
   width: 100%;

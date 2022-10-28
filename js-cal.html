@@ -12,7 +12,7 @@
       <h1 class="header">Javascript Calculator</h1>
 
       <section class="calculator">
-        <input class="screen" type="text"/>
+        <div id="screen"></div>
         <div class="buttons">
           <button class="clear">AC</button>
           <div class="blank"></div>
@@ -26,7 +26,7 @@
           <button class="number">5</button>
           <button class="number">6</button>
           <button class="minus">-</button>
-          <button class="number">1</button>
+          <button onclick="displayNumber()" class="number">1</button>
           <button class="number">2</button>
           <button class="number">3</button>
           <button class="plus">+</button>
@@ -37,5 +37,8 @@
         </div>
       </section>
     </main>
+
+    <script src="./js-cal.js"></script>
+
   </body>
 </html>
