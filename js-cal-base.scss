@@ -1,0 +1,13 @@
+$font-body: Helvetica, sans-serif;
+
+$color-primary: #8900FF;
+$color-secondary: aqua;
+$color-black: #171717;
+$color-white: #F5F5F5;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-body;
+}
