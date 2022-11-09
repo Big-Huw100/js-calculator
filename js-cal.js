@@ -1,4 +1,4 @@
-const screen = document.querySelector(".screen");
+const screen = document.querySelector("#screen");
 const numberButtons = document.querySelectorAll("button");
 
 
@@ -8,17 +8,22 @@ function displayButton() {
 
     const node = document.createTextNode(event.target.value);
 
-    num.appendChild(node)
+    num.appendChild(node);
 
     document.getElementById("screen").appendChild(num);
 };
-    
 
+// Delete most recent input
+function backSpace() {
+    screen.removeChild(screen.lastElementChild);
+};
 
-// Challenge: put the operator as well as multiple numbers
-
-
-// Challenge: put the RIGHT numbers on the screen
+// All Clear!
+function allClear() {
+while (screen.hasChildNodes()) {
+    screen.removeChild(screen.firstChild);
+};
+};
 
 
 // CALCULATE!!!!
