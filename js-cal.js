@@ -1,15 +1,15 @@
 const screen = document.querySelector(".screen");
 const numberButtons = document.querySelectorAll(".number");
 
-    // When I press ANY number, that number should show on the screen
-    numberButtons.forEach((button) => {
-        button.addEventListener("click", (event) => {
-            screen.innerHTML = event.target.value;
-        });
-    });
-    
+function displayNumber() {
+    const num = document.createElement("p");
 
-    // Challenge: put LEFT multiple numbers on the screen
+    const node = document.createTextNode(event.target.value);
+
+    num.appendChild(node)
+
+    document.getElementById("screen").appendChild(num);
+};
     
     // Challenge: put the operator as well as multiple numbers
 
