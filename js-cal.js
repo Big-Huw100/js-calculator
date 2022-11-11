@@ -10,7 +10,6 @@ const equalsButton = document.querySelector(".equals");
 let leftNumber = "";
 let operator = "";
 let rightNumber = "";
-let answerNumber = "";
 
 // Number buttons linked to screen
 numberButtons.forEach(numberButton => {
@@ -43,13 +42,15 @@ allClearButton.addEventListener("click", () => {
 // equals button that calculates sum inputted
 equalsButton.addEventListener("click", () => {
     if (operator === "+") {
-        answerNumber = parseInt(leftNumber) + parseInt(rightNumber);
+        leftNumber = parseInt(leftNumber) + parseInt(rightNumber);
     } else if (operator === "-") {
-        answerNumber = parseInt(leftNumber) - parseInt(rightNumber);
+        leftNumber = parseInt(leftNumber) - parseInt(rightNumber);
     } else if (operator === "x") {
-        answerNumber = parseInt(leftNumber) * parseInt(rightNumber);
+        leftNumber = parseInt(leftNumber) * parseInt(rightNumber);
     } else if (operator === "/") {
-        answerNumber = parseInt(leftNumber) / parseInt(rightNumber);
+        leftNumber = parseInt(leftNumber) / parseInt(rightNumber);
     };
-    screen.innerHTML = answerNumber;
+    operator = "";
+    rightNumber = "";
+    screen.innerHTML = leftNumber;
 });
