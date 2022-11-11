@@ -42,13 +42,13 @@ allClearButton.addEventListener("click", () => {
 // equals button that calculates sum inputted
 equalsButton.addEventListener("click", () => {
     if (operator === "+") {
-        leftNumber = parseInt(leftNumber) + parseInt(rightNumber);
+        leftNumber = parseFloat(leftNumber) + parseFloat(rightNumber);
     } else if (operator === "-") {
-        leftNumber = parseInt(leftNumber) - parseInt(rightNumber);
+        leftNumber = parseFloat(leftNumber) - parseFloat(rightNumber);
     } else if (operator === "x") {
-        leftNumber = parseInt(leftNumber) * parseInt(rightNumber);
+        leftNumber = parseFloat(leftNumber) * parseFloat(rightNumber);
     } else if (operator === "/") {
-        leftNumber = parseInt(leftNumber) / parseInt(rightNumber);
+        leftNumber = parseFloat(leftNumber) / parseFloat(rightNumber);
     };
     operator = "";
     rightNumber = "";
