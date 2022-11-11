@@ -1,25 +1,25 @@
 const numberButtons = document.querySelectorAll(".number");
 const operatorButtons = document.querySelectorAll(".operator");
 
-let leftNumber = 0;
+let leftNumber = "";
 let operator = "";
-let rightNumber = 0;
+let rightNumber = "";
 
 
 
 numberButtons.forEach(numberButton => {
-    numberButton.addEventListener("click", (event, value) => {
+    numberButton.addEventListener("click", (event) => {
         if (!operator) {
-            leftNumber = event.target.value;
+            leftNumber = leftNumber += event.target.value;
         } else {
-            rightNumber = event.target.value;
+            rightNumber = rightNumber += event.target.value;
         };
         console.log(leftNumber, operator, rightNumber);
     });
 });
 
 operatorButtons.forEach(operatorButton => {
-    operatorButton.addEventListener("click", (event, value) => {
+    operatorButton.addEventListener("click", (event) => {
         operator = event.target.value;
         console.log(leftNumber, operator, rightNumber);
     });
