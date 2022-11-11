@@ -1,5 +1,4 @@
-// Grabbed my buttons
-
+// Grabbed my elements
 const screen = document.querySelector(".screen")
 const numberButtons = document.querySelectorAll(".number");
 const operatorButtons = document.querySelectorAll(".operator");
@@ -32,7 +31,7 @@ operatorButtons.forEach(operatorButton => {
 });
 
 // all clear function to remove an entire sum
-allClearButton.addEventListener("click", () => {
+const allClear = allClearButton.addEventListener("click", () => {
     leftNumber = "";
     operator = "";
     rightNumber = "";
