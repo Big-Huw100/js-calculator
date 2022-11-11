@@ -46,7 +46,7 @@ body {
   padding: 1px;
 }
 
-#screen {
+.screen {
   background-color: aqua;
   border-style: none;
   width: 100%;
