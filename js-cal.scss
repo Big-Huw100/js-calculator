@@ -31,8 +31,8 @@ body {
 
 .header {
     color: $color-black;
-    padding: 20px 0;
-    font-size: 30px;
+    margin-bottom: 10px;
+    font-size: 40px;
 }
 
 .calculator {
@@ -52,6 +52,35 @@ body {
     width: 100%;
     margin: 10px;
     padding: 1px;
+
+    .number {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .operator {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .equals {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .allClear {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
 
 .screen {
@@ -61,6 +90,7 @@ body {
     height: 70.13px;
     margin-top: 5px;
     display: flex;
+    font-size: 50px;
 }
 
 button {
@@ -78,30 +108,34 @@ button {
     height: 70.13px;
 }
 
-@media screen and (max-width: 389px) {
-    .header {
-        font-size: 29px;
-    }
-
-    button {
-        width: 70.13px;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    button {
-        width: 70px;
-    }
-}
-
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 768px) {
     .main {
-        width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+    .header {
+        font-size: 24px;
+        padding: 10px 0;
+    }
+    button {
+        width: 60px;
+        height: 50px;
+        font-size: 16px;
     }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 480px) {
+    .main {
+        margin: 5px;
+        padding: 5px;
+    }
     .header {
-        font-size: 29px;
+        font-size: 20px;
+        padding: 5px 0;
+    }
+    button {
+        width: 45px;
+        height: 40px;
+        font-size: 14px;
     }
 }
